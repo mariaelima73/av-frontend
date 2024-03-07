@@ -8,4 +8,35 @@
 /* Header */
 .main-header{
     background-image: url(background-image.png);
+    background-position: 50% 39%; /*Alinha os elementos nos eixos x e y*/
+    display: flex;
+    flex-direction: column; /*Alinha os elementos um embaixo do outro*/
+    align-items: center;
+}
+.main-nav{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 16px;
+}
+.header-list-container{
+    display: flex;
+    justify-content: space-between; /*Adiciona espaço entre os elementos da lista*/
+    align-items: center;
+    padding: 16px 0;
+}
+.nav-item{
+    list-style-type: none;
+    text-transform: uppercase; /*Deixar todas as letras em maiúsculo*/
+    color: #1b4b05;
+}
+.nav-item a{
+    text-decoration: none;
+    color: inherit; /*Pega a cor em nav-item*/
+}
+.nav-item:hover {
+    color: rgba(27, 75, 5, 0.6); /*Colocar a mesma cor do nav-item em % de transparência*/
+    transition: 1s;
+}
+hr{
+    width: 100%;
 }
