@@ -5,8 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.red {
-    color: lightseagreen;
-    font-family: "Rock Salt", cursive;
+/* Header */
+.main-header{
+    background-image: url(background-image.png);
 }
