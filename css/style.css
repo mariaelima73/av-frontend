@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +14,6 @@
 }
 .main-nav{
     width: 100%;
-    max-width: 600px;
-    padding: 0 16px;
 }
 .header-list-container{
     display: flex;
@@ -39,4 +36,26 @@
 }
 hr{
     width: 100%;
+}
+.main-about{
+    padding: 40px 0 64px;
+}
+.container{
+    max-width: 600px;
+    padding: 0 16px;
+    margin: 0 auto; /*Não aplica encima/embaixo, o auto distribui o máximo possível para esquerda e direita*/
+}
+.about-title{
+    font-family: "Manrope", cursive;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.about-image{
+    float: left; /*Ajusta a imagem à esquerda dentro do texto*/
+    margin: 0 20px 10px 0;
+}
+.about-description{
+    text-align: justify;
 }
