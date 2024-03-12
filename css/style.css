@@ -4,6 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+li{
+    list-style-type: none;
+}
+/* Criação de cores no root do CSS */
+:root{
+    --blue: #00008B;
+    --gary: #555555;
+    --skyBlue: #00BFFF;
+    --silver: #C0C0C0;
+    --red: #FF0000;
+    --white: #FFFFFF;
+    --darkGray: #959595;
+}
 /* Header */
 .main-header{
     background-image: url(background-image.png);
@@ -22,7 +35,6 @@
     padding: 16px 0;
 }
 .nav-item{
-    list-style-type: none;
     text-transform: uppercase; /*Deixar todas as letras em maiúsculo*/
     color: #1b4b05;
 }
@@ -55,7 +67,37 @@ hr{
 .about-image{
     float: left; /*Ajusta a imagem à esquerda dentro do texto*/
     margin: 0 20px 10px 0;
+    width: 200px;
+    height: auto;
 }
 .about-description{
     text-align: justify;
+}
+/* Rodapé do Site */
+.main-footer{
+    background-color: var(--skyBlue);
+    padding: 15px 0;
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Coloca o nome de um lado e a lista de ícones do outro*/
+}
+.title-smaller{
+    font-family: "Raleway", sans-serif;
+    color: var(--blue);
+    font-size: 26px;
+}
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-item{
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;
+}
+.footer-item + .footer-item{
+    margin-left: 16px; /*Coloca um margin somente entre os itens de acordo com o lugar (esquerda ou direita) até somente o penúltimo item.*/
 }
