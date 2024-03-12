@@ -18,80 +18,83 @@
     <!-- Área do Site -->
     <body>
         <!-- Cabeçalho -->
-        <header>
-        <!-- Navegação -->
-            <nav>
-                <!-- Lista Não Ordenada -->
-                <ul>
-                    <!-- Itens da Lista -->
-                    <li>
-                        <a href="index.html"><img src="images/logo.png" alt="logo" height="100px" width="100px"></a>
-                    </li>
-                    <li>
-                        <a href="loja.html">Loja</a>
-                    </li>
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-                    <li>
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <header class="main-header">
+            <!-- Navegação -->
+                <nav class="main-nav container">
+                    <!-- Lista Não Ordenada -->
+                    <ul class="header-list-container">
+                        <!-- Itens da Lista -->
+                        <li class="nav-item">
+                            <a href="index.html"><img src="images/logo.png" alt="logo" height="100px" width="100px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="loja.html">Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr>
+            </header>
 
         <main>
-            <h2>Contato</h2>
-            <p>Os campos com * são de preenchimento obriatório!</p>
+            <h2 class="title-median">Contato</h2>
+            <p class="contact-text">Os campos com * são de preenchimento obriatório!</p>
             <!-- Corpo do Formulário -->
-            <form>
+            <form class="contact">
                 <!-- Campos do Formulário -->
-                <label>
+                <label class="contact-label">
                     Nome*
-                    <input type="text" required>
+                    <input class="contact-field" type="text" required>
                 </label>
-                <label>
+                <label class="contact-label">
                     E-mail*
-                    <input type="text" required>
+                    <input class="contact-field" type="text" required>
                 </label>
-                <label>
+                <label class="contact-label">
                     Assunto*
-                    <select>
-                        <option>Selecionar</option>
+                    <select class="contact-field">
+                        <option>Newsletter</option>
                         <option>Dúvidas</option>
                         <option>Críticas</option>
                         <option>Sugestões</option>
                     </select>
                 </label>
-                <label>
+                <label class="contact-label">
                     Mensagem*
-                    <textarea required></textarea>
+                    <textarea class="contact-field" required></textarea>
                 </label>
-                <button type="button">Enviar</button>
+                <button class="button-form" type="button">Enviar</button>
             </form>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.078331776905!2d-41.745136221683005!3d-2.9232203421776406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec3ab738621aff%3A0x56e310b0c01c0ef7!2sR.%20Luc%C3%ADdio%20Portela%2C%201415%20-%20Piau%C3%AD%2C%20Parna%C3%ADba%20-%20PI%2C%2064208-410!5e0!3m2!1spt-BR!2sbr!4v1709730849280!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.078331776905!2d-41.745136221683005!3d-2.9232203421776406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec3ab738621aff%3A0x56e310b0c01c0ef7!2sR.%20Luc%C3%ADdio%20Portela%2C%201415%20-%20Piau%C3%AD%2C%20Parna%C3%ADba%20-%20PI%2C%2064208-410!5e0!3m2!1spt-BR!2sbr!4v1709730849280!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </main>
 
         <!-- Rodapé do Site-->
-        <footer>
-            <div>
+        <footer class="main-footer">
+            <div class="footer-container">
                 <!-- Terceiro Título -->
-                <h3>Vendas Livres Stores - Maria Elaine 2024</h3>
-                <ul>
-                    <li>
+                <h3 class="title-smaller">Vendas Livres Stores - Maria Elaine 2024</h3>
+                <ul class="footer-container">
+                    <li class="footer-item">
                         <a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook.svg" alt="facebook logo"></a>
                     </li>
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.instagram.com/" target="_blank"> <img src="images/instagram.svg" alt="instagram logo"></a>
                     </li>
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.spotify.com/" target="_blank"> <img src="images/spotify.svg" alt="spotify logo"></a>
                     </li>
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.youtube.com/" target="_blank"> <img src="images/youtube.svg" alt="youtube logo"></a>
                     </li>
                 </ul>
             </div>
-        </footer>
+        </footer>      
     </body>
 </html>

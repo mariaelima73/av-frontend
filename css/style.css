@@ -4,13 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font: 400 18px "Manrope", sans-serif;
+    background-color: #ccf2ff;
+}
 li{
     list-style-type: none;
 }
 /* Criação de cores no root do CSS */
 :root{
     --blue: #00008B;
-    --gary: #555555;
+    --gray: #555555;
     --skyBlue: #00BFFF;
     --silver: #C0C0C0;
     --red: #FF0000;
@@ -57,7 +61,7 @@ hr{
     padding: 0 16px;
     margin: 0 auto; /*Não aplica encima/embaixo, o auto distribui o máximo possível para esquerda e direita*/
 }
-.about-title{
+.title-median{
     font-family: "Manrope", cursive;
     font-size: 32px;
     text-align: center;
@@ -78,7 +82,13 @@ hr{
     background-color: var(--skyBlue);
     padding: 15px 0;
 }
-.main-footer-container{
+/* .main-footer{ Coloca o footer fixado no final
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+} */
+.footer-container{
     display: flex;
     align-items: center;
     justify-content: space-between; /*Coloca o nome de um lado e a lista de ícones do outro*/
@@ -88,11 +98,6 @@ hr{
     color: var(--blue);
     font-size: 26px;
 }
-.list-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .footer-item{
     width: 50px;
     height: 50px;
@@ -100,4 +105,60 @@ hr{
 }
 .footer-item + .footer-item{
     margin-left: 16px; /*Coloca um margin somente entre os itens de acordo com o lugar (esquerda ou direita) até somente o penúltimo item.*/
+}
+/* Área do Contato */
+.contact-text{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: var(--gray);
+}
+.contact{
+    background-color: var(--skyBlue);
+    padding: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.contact-label{
+    display: block;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+.contact-field{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+}
+.contact-field:focus{
+    background-color: var(--silver);
+    outline: none; /*Remeve a borda quando selecionado o campo*/
+}
+textarea.contact-field{
+    height: 150px;
+    padding: 10px;
+    font-family: "Raleway", Calibri;
+}
+.button-form{
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-weight: bold; /*Deixa a fonte mais espessa, negrito*/
+    cursor: pointer;
+}
+.button-form:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+.contact-maps{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
 }
