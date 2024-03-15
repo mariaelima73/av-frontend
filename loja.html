@@ -81,7 +81,7 @@
                     </div>  
                 </div>
             </section>
-
+            <br>
             <section>
                 <h2 class="title-median">Meias</h2>
                 <div class="product-container">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </section>
-
+            <br>
             <section>
                 <h2 class="title-median">Toucas</h2>
                 <div class="product-container">
@@ -157,28 +157,59 @@
                     </div>
                 </div>
             </section>
-
+            <br>
             <section>
                 <h2 class="title-median">Carrinho</h2>
-                <table> <!-- Tabela -->
+                <table class="cart-table"> <!-- Tabela -->
                     <thead> <!-- Em Negrito (Cabeçalho) -->
                         <tr> <!-- Linha -->
-                            <th>Item</th> <!-- Coluna -->
-                            <th>Preço</th>
-                            <th>Quantidade</th>
+                            <th class="table-head-item first-col">Item</th> <!-- Coluna -->
+                            <th class="table-head-item second-col">Preço</th>
+                            <th class="table-head-item third-col">Quantidade</th>
                         </tr>
                     </thead>
 
+                    <tbody> <!-- Corpo da Tabela -->
+                        <tr class="cart-product">
+                            <td class="product-identification"> <!-- Coluna -->
+                                <img class="cart-product-image" src="images/meia-preta.jpeg" alt="Meia Preta">
+                                <strong class="cart-product-title">Meia Preta</strong>
+                            </td>
+                            <td> <!-- Coluna -->
+                                <span class="cart-product-price">R$ 129,99</span>
+                            </td>
+                            <td> <!-- Coluna -->
+                                <input class="product-qnt-input" type="number" value="2" min="0" max="10">
+                                <button class="remove-product-button" type="button">Remover</button>
+                            </td>
+                        </tr>
+
+                        <tr class="cart-product">
+                            <td class="product-identification">
+                                <img class="cart-product-image" src="images/touca-kit.jpeg" alt="Kit de Toucas">
+                                <strong class="cart-product-title">Kit de Toucas</strong>
+                            </td>
+                            <td>
+                                <span class="cart-product-price">R$ 129,99</span>
+                            </td>
+                            <td>
+                                <input class="product-qnt-input" type="number" value="1" min="0" max="10">
+                                <button class="remove-product-button" type="button">Remover</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
                     <tfoot> <!-- (Rodapé) -->
                         <tr>
-                            <td colspan="3"> <!-- Colspan = Quantidade de colunas requeridas -->
+                            <td class="cart-total-container" colspan="3"> <!-- Colspan = Quantidade de colunas requeridas -->
                                 <strong>Total</strong>
-                                <span>R$ 0,00</span>
+                                <span>R$ 389,97</span>
                             </td> <!-- TD = Formatação Livre e Simples-->
                         </tr>
                     </tfoot>
                 </table>
-                <button type="button">Finalizar Compra</button>
+                <button class="purchase-button" type="button">Finalizar Compra</button>
             </section>
 
         </main>
