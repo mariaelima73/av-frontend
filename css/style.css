@@ -46,6 +46,10 @@ li{
     text-decoration: none;
     color: inherit; /*Pega a cor em nav-item*/
 }
+.nav-item img{
+    height: 100px;
+    width: 100px;
+}
 .nav-item:hover {
     color: rgba(27, 75, 5, 0.6); /*Colocar a mesma cor do nav-item em % de transparência*/
     transition: 1s;
@@ -82,13 +86,7 @@ hr{
     background-color: var(--skyBlue);
     padding: 15px 0;
 }
-/* .main-footer{ Coloca o footer fixado no final
-    bottom: 0;
-    position: fixed;
-    right: 0;
-    left: 0;
-} */
-.footer-container{
+.main-footer-container{
     display: flex;
     align-items: center;
     justify-content: space-between; /*Coloca o nome de um lado e a lista de ícones do outro*/
@@ -97,6 +95,11 @@ hr{
     font-family: "Raleway", sans-serif;
     color: var(--blue);
     font-size: 26px;
+}
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .footer-item{
     width: 50px;
@@ -310,4 +313,23 @@ textarea.contact-field{
 }
 .purchase-button:hover{
     filter: brightness(0.8);
+}
+/*Responsividade*/
+@media (max-width: 725px) {
+    .footer-container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    .header-list-container{
+        font-size: 16px;
+    }
+    .nav-item img{
+        width: 80px;
+        height: 80px;
+    }
+    .title-header{
+        font-size: 28px;
+        text-align: center;
+    }
 }
