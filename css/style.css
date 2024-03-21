@@ -315,21 +315,114 @@ textarea.contact-field{
     filter: brightness(0.8);
 }
 /*Responsividade*/
-@media (max-width: 725px) {
-    .footer-container{
-        flex-direction: column;
+@media (max-width: 825px) {
+    .title-header{
+        font-size: 32px;
+        text-align: center;
     }
 }
-@media (max-width: 425px) {
+@media (max-width: 725px) {
+    .main-footer-container{
+        flex-direction: column;
+    }
+    .title-median{
+        font-size: 30px;
+        padding: 4px;
+    }
+}
+@media (max-width: 680px) {
+    .product-container{
+        justify-content: center;
+    }
+    .title-median{
+        font-size: 27px;
+    }
+    .title-header{
+        font-size: 26px;
+    }
+}
+@media (max-width: 600px) {
+    .title-large{
+        font-size: 36px;
+    }
+    .title-median{
+        font-size: 24px;
+    }
+}
+@media (max-width: 590px){
+    .product-identification {
+        flex-direction: column;
+    }
+    /* .quant-remov{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+}
+@media (max-width: 560px) {
+    .title-large{
+        font-size: 32px;
+    }
+    .title-median{
+        font-size: 21px;
+    }
+}
+@media (max-width: 500px) {
+    .title-header{
+        font-size: 30px;
+    }
+    .title-large{
+        font-size: 26px;
+    }
+    .title-median{
+        font-size: 18px;
+    }
+    .title-smaller{
+        font-size: 22px;
+    }
+}
+@media (max-width: 405px) {
     .header-list-container{
-        font-size: 16px;
+        font-size: 18px;
     }
     .nav-item img{
         width: 80px;
         height: 80px;
     }
+    .description{
+        font-size: 19px;
+        font-family: "Madimi One", cursive;
+    }
     .title-header{
         font-size: 28px;
+    }
+    .title-smaller{
         text-align: center;
+        font-size: 17px;
+    }
+    .title-median{
+        font-size: 26px;
+    }
+    .product-container{
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product-image{
+        width: 315px;
+    }
+}
+@media (max-width: 375px){
+    .about-image{
+        width: 160px;
+    }
+    .contact-text{
+        font-size: 20px;
+    }
+    .contact-label{
+        font-size: 18px;
+    }
+    .button-form{
+        font-size: 18px;
     }
 }
