@@ -25,7 +25,7 @@
                     <ul class="header-list-container">
                         <!-- Itens da Lista -->
                         <li class="nav-item">
-                            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                            <a href="index.html"><img src="images/logo.png" alt="logo" class="logo-zoom"></a>
                         </li>
                         <li class="nav-item">
                             <a href="loja.html">Loja</a>
@@ -42,7 +42,7 @@
                 <h2 class="title-header">Seja Bem-vindo ao Maior Site de Vendas do Brasil!</h2>
             </header>
         <main class="main-about">
-            <section>
+            <section id="tenis-section">
                 <!-- Seção dos Tênis -->
                 <h2 class="title-median">Tênis</h2>
                 <!-- Todos os produtos -->
@@ -102,7 +102,7 @@
                 </div>
             </section>
             <br>
-            <section>
+            <section id="meias-section">
                 <h2 class="title-median">Meias</h2>
                 <div class="product-container">
                     <div class="product"> <!-- Produto Individual -->
@@ -160,7 +160,7 @@
                 </div>
             </section>
             <br>
-            <section>
+            <section id="toucas-section">
                 <h2 class="title-median">Toucas</h2>
                 <div class="product-container">
                     <div class="product">
@@ -218,120 +218,122 @@
                 </div>
             </section>
             <br>
-            <section>
-                <h2 class="title-median">Roupas Masculinas</h2>
-                <div class="product-container">
-                    <div class="product">
-                        <strong class="product-title">Kit de Camisas</strong>
-                        <img class="product-image" src="images/kit-camisas-masc.png" alt="Kit de Camisas">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>O Kit 5 Camisas Básicas Masculinas em Algodão Premium 30.1 Penteado é composto por cinco camisetas essenciais para o guarda-roupa masculino.</p>    
+            <section id="roupas-section">
+                <section id="roupasMasc-section">
+                    <h2 class="title-median">Roupas Masculinas</h2>
+                    <div class="product-container">
+                        <div class="product">
+                            <strong class="product-title">Kit de Camisas</strong>
+                            <img class="product-image" src="images/kit-camisas-masc.png" alt="Kit de Camisas">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>O Kit 5 Camisas Básicas Masculinas em Algodão Premium 30.1 Penteado é composto por cinco camisetas essenciais para o guarda-roupa masculino.</p>    
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$148,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
                         </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$148,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                        <div class="product">
+                            <strong class="product-title">Camisa de Algodão</strong>
+                            <img class="product-image" src="images/camisa-leao.png" alt="Camisa de Algodão">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>Camisa 100% algodão Fio 30.1 de alta qualidade, na cor preta com imagem de leão.</p>    
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$99,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product">
-                        <strong class="product-title">Camisa de Algodão</strong>
-                        <img class="product-image" src="images/camisa-leao.png" alt="Camisa de Algodão">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>Camisa 100% algodão Fio 30.1 de alta qualidade, na cor preta com imagem de leão.</p>    
+                        <div class="product">
+                            <strong class="product-title">Camisa Greenk Qr Code</strong>
+                            <img class="product-image" src="images/camisa-qrcode.png" alt="Camisa Greenk Qr Code">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>Camisa de composição 100% Algodão da marca Greenk, na cor preta com imagem estampada de qrcode.</p>    
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$179,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
                         </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$99,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <strong class="product-title">Camisa Greenk Qr Code</strong>
-                        <img class="product-image" src="images/camisa-qrcode.png" alt="Camisa Greenk Qr Code">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>Camisa de composição 100% Algodão da marca Greenk, na cor preta com imagem estampada de qrcode.</p>    
-                        </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$179,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <strong class="product-title">Moletom Masculino</strong>
-                        <img class="product-image" src="images/moletom.png" alt="Moletom Masculino">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>O moletom é confeccionado em moletom 50% Algodão e 50% Poliéster e com a parte interna toda macia e flanelada.</p>    
-                        </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$99,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section>
-                <h2 class="title-median">Roupas Femininas</h2>
-                <div class="product-container">
-                    <div class="product">
-                        <strong class="product-title">Baby Look Verde</strong>
-                        <img class="product-image" src="images/baby-fem.png" alt="Baby Look Verde">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>O produto é uma malha 100% algodão, o que garante conforto ao vestir a peça. O fio utilizado para confecção é 30.1 penteado.</p>
-                        </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$59,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                        <div class="product">
+                            <strong class="product-title">Moletom Masculino</strong>
+                            <img class="product-image" src="images/moletom.png" alt="Moletom Masculino">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>O moletom é confeccionado em moletom 50% Algodão e 50% Poliéster e com a parte interna toda macia e flanelada.</p>    
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$99,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product">
-                        <strong class="product-title">Kit de Baby Look</strong>
-                        <img class="product-image" src="images/kit-baby-fem.png" alt="Kit de Baby Look">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>Este combo multicolorido de baby look de algodão penteado é feito com malha de altíssima qualidade com toque macio, durabilidade e muito confortável.</p>
+                </section>
+                <br>
+                <section id="roupasFem-section">
+                    <h2 class="title-median">Roupas Femininas</h2>
+                    <div class="product-container">
+                        <div class="product">
+                            <strong class="product-title">Baby Look Verde</strong>
+                            <img class="product-image" src="images/baby-fem.png" alt="Baby Look Verde">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>O produto é uma malha 100% algodão, o que garante conforto ao vestir a peça. O fio utilizado para confecção é 30.1 penteado.</p>
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$59,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
                         </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$189,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                        <div class="product">
+                            <strong class="product-title">Kit de Baby Look</strong>
+                            <img class="product-image" src="images/kit-baby-fem.png" alt="Kit de Baby Look">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>Este combo multicolorido de baby look de algodão penteado é feito com malha de altíssima qualidade com toque macio, durabilidade e muito confortável.</p>
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$189,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <strong class="product-title">Moletom Feminino</strong>
+                            <img class="product-image" src="images/moletom-fem.png" alt="Moletom Feminino">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>O moletom é confeccionado em 50% Algodão e 50% Poliéster e com a parte interna toda macia e flanelada.</p>
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$99,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <strong class="product-title">Vestido Jacquard</strong>
+                            <img class="product-image" src="images/vestido.png" alt="Vestido Jacquard">
+                            <div class="description-product">
+                                <p>Descrição</p>
+                                <br>
+                                <p>O vestido delicado Pequiá, feito em jacquard, apresenta um decote em V elegante e detalhes de pregas no busto, adicionando sofisticação ao visual.</p>
+                            </div>
+                            <div class="product-price-container">
+                                <span class="product-price">R$289,99</span>
+                                <button class="button-hover" type="button">Adicionar ao Carrinho</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product">
-                        <strong class="product-title">Moletom Feminino</strong>
-                        <img class="product-image" src="images/moletom-fem.png" alt="Moletom Feminino">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>O moletom é confeccionado em 50% Algodão e 50% Poliéster e com a parte interna toda macia e flanelada.</p>
-                        </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$99,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <strong class="product-title">Vestido Jacquard</strong>
-                        <img class="product-image" src="images/vestido.png" alt="Vestido Jacquard">
-                        <div class="description-product">
-                            <p>Descrição</p>
-                            <br>
-                            <p>O vestido delicado Pequiá, feito em jacquard, apresenta um decote em V elegante e detalhes de pregas no busto, adicionando sofisticação ao visual.</p>
-                        </div>
-                        <div class="product-price-container">
-                            <span class="product-price">R$289,99</span>
-                            <button class="button-hover" type="button">Adicionar ao Carrinho</button>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </section>
             <br>
             <section class="container car">
@@ -410,6 +412,10 @@
                     </li>
                 </ul>
             </div>
-        </footer>           
+        </footer>  
+        
+        <script src="script.js">
+
+        </script>
     </body>
 </html>

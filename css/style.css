@@ -50,10 +50,49 @@ li{
     height: 100px;
     width: 100px;
 }
-.nav-item:hover {
+.nav-item:hover{
     color: rgba(27, 75, 5, 0.6); /*Colocar a mesma cor do nav-item em % de transparência*/
     transition: 1s;
 }
+/*Estilo para o sub-item*/
+
+/*Ocultar os sub-itens por padrão*/
+.sub-item, .sub-item2 {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*Mostrar os subitens quando o mouse passa sobre o item pai*/
+.nav-item:hover .sub-item, .sub-item2{
+    display: block;
+}
+
+/*Estilo dos sub-itens*/
+.sub-item li{
+    margin-bottom: 5px;
+}
+.sub-item a{
+    color: var(--blue);
+    text-decoration: none;
+}
+.sub-item a:hover{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: var(--blue);
+    background-color: rgba(55, 194, 152, 0.6);
+    width: 20px;
+}
+
+.logo-zoom{
+    transition: transform 0.3s ease;
+}
+.logo-zoom:hover{
+    transform: scale(1.2);
+}
+
 hr{
     width: 100%;
 }
