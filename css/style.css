@@ -20,6 +20,7 @@ li{
     --red: #FF0000;
     --white: #FFFFFF;
     --darkGray: #959595;
+    --water: #63c4b9;
 }
 /* Header */
 .main-header{
@@ -54,10 +55,42 @@ li{
     color: rgba(27, 75, 5, 0.6); /*Colocar a mesma cor do nav-item em % de transparência*/
     transition: 1s;
 }
+
+#voltarAoTopo {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: var(--blue);
+    color: var(--blue);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+#voltarAoFim {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    left: 50px;
+    background-color: var(--blue);
+    color: var(--blue);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.scroll {
+    width: 50px;
+    height: 50px;
+}
+
 /*Estilo para o sub-item*/
 
 /*Ocultar os sub-itens por padrão*/
-.sub-item, .sub-item2 {
+.sub-item {
     display: none;
     position: fixed;
     padding: 10px;
@@ -65,14 +98,14 @@ li{
 }
 
 /*Mostrar os subitens quando o mouse passa sobre o item pai*/
-.nav-item:hover .sub-item, .sub-item2{
+.nav-item:hover .sub-item{
     display: block;
 }
 
 /*Estilo dos sub-itens*/
 
 .sub-item{
-    background-color: #ccf2ff;
+    background-color: var(--water);
     width: 150px;
 }
 .sub-item li{

@@ -1,3 +1,37 @@
+// Função de voltar ao topo
+
+const botaoVoltarAoTopo = document.getElementById('voltarAoTopo')
+
+botaoVoltarAoTopo.addEventListener('click', () => {
+    scrollTo({top: 0, behavior: 'smooth'})
+})
+
+addEventListener('scroll', () => {
+    if (scrollY > 100) {
+        botaoVoltarAoTopo.style.display = 'block';
+    } else {
+        botaoVoltarAoTopo.style.display = 'none';
+    }
+})
+//------------------------------------------------------------------
+// Função de voltar ao Fim
+
+const botaoVoltarAoFim = document.getElementById('voltarAoFim')
+const fim = document.body.scrollHeight
+
+botaoVoltarAoFim.addEventListener('click', () => {
+    scrollTo({top: fim, behavior: 'smooth'})
+})
+
+addEventListener('scroll', () => {
+    if (scrollY > 100) {
+        botaoVoltarAoFim.style.display = 'block';
+    } else {
+        botaoVoltarAoFim.style.display = 'none';
+    }
+})
+//------------------------------------------------------------------
+
 const boxes = document.querySelectorAll(".product-box")
 
 boxes.forEach(box =>{
@@ -23,3 +57,5 @@ box.addEventListener("mouseleave", (e) => {
 
 })
 })
+
+//-----------------------------------------------------------

@@ -29,6 +29,20 @@
                         </li>
                         <li class="nav-item">
                             <a href="loja.html">Loja</a>
+                            <ul class="sub-item">
+                                <li><a href="loja.html#tenis-section">Tênis</a></li>
+                                <li><a href="loja.html#meias-section">Meias</a></li>
+                                <li><a href="loja.html#toucas-section">Toucas</a></li>
+                            </ul>
+                            <ul class="header-list-container">
+                                <li class="nav-item">
+                                    <a href="loja.html#roupas-section">Roupas</a>
+                                    <ul class="sub-item">
+                                        <li><a href="loja.html#roupasMasc-section">Masculinas</a></li>
+                                        <li><a href="loja.html#roupasFem-section">Femininas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="contato.html">Contato</a>
@@ -347,7 +361,7 @@
                         </tr>
                     </thead>
 
-                    <tbody> <!-- Corpo da Tabela -->
+                    <tbody id="cart-container"> <!-- Corpo da Tabela -->
                         <tr class="cart-product">
                             <td class="product-identification"> <!-- Coluna -->
                                 <img class="cart-product-image" src="images/meia-preta.jpeg" alt="Meia Preta">
@@ -414,8 +428,10 @@
             </div>
         </footer>  
         
-        <script src="script.js">
+        <script src="script.js" defer></script>
 
-        </script>
+        <button id="voltarAoTopo"> <img src="images/arrow_up.png" alt="arrow_up" class="scroll"> </button>
+        <button id="voltarAoFim"> <img src="images/arrow_down.png" alt="arrow_up" class="scroll"> </button>
+
     </body>
 </html>
